@@ -1,0 +1,31 @@
+$baseColor: teal;
+$textSize: 1rem;
+$bgc: red;
+$baseWidth: 80vw;
+
+@font-face {
+    font-family: curlz;
+    src: url(curlz.ttf.pdf);
+}
+%box{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    color: #fff;
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+@mixin boxm($width, $height) {
+    width: $width;
+    height: $height;
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

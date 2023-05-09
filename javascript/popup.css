@@ -1,0 +1,35 @@
+button{
+    display: block;
+    margin: 20px auto;
+    color: aliceblue;
+    background-color: crimson;
+    border: 1px solid black;
+    padding: 6px,15px;
+    font-size: 2rem;
+    box-shadow: 3px,3px,3px rgba(0, 0, 0, .5);}
+    #popupwrapper {
+        background-color: rgba(0, 0, 0, .5);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+#popup {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+} 
+#close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}

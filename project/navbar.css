@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}/*# sourceMappingURL=navbar.css.map */

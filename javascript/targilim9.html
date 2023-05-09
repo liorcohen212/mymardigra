@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // sort
+    // למיין את כל ערכי המערך
+    let cities = ["Madrid", "Paris", "London"];
+    cities.sort();
+    console.log(cities);
+    
+    // מיינו את מערך המספרים הבא
+    let numbers = [10, 45, 31, 100, 95];
+    numbers.sort(function (num1, num2) {
+    return num1 - num2;
+    });
+    console.log(numbers);
+    // reduce
+        // עוברת על כל איברי המערך ומפיקה איזשהו ערך בודד ממנו
+        let prices = [240, 184, 123, 171];
+        function findSum(arr) {
+            let sum = 0;
+            for (let num of arr) sum += num;
+            return sum;
+        }
+        console.log(findSum(prices));
+
+        let sum = prices.reduce(function (total, value) {
+            return total + value;
+        });
+
+        console.log("The total sum of prices is", sum);
+        let names = ["Avi", "Gil", "Adam", "Shira"];
+            let nameWithX = names.find(function (name) {
+                return name.includes("X");
+            });
+
+            console.log(nameWithX);
+            // find
+                // לעבור על כל איברי המערך ולהחזיר את האיבר הראשון שעמד בתנאי כלשהו
+                let cities = ["Haifa", "Tel-Aviv", "Jerusalem", "Ashdod"];
+                let cityLengthBiggerThan7 = cities.find(function (city) {
+                    return city.length > 7;
+                });
+                console.log(cityLengthBiggerThan7);
+    </script>
+</body>
+</html>

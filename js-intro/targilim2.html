@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Grades System</h2>
+    <label for="grade">grade:</label>
+    <input id="grade" type="number">
+    <button onclick="pass()">chack</button>
+    <p id="result"></p>
+    <script>
+        
+        function pass(){
+            let gradenum = document.getElementById("grade").value;
+            if(gradenum >= 55){
+                document.getElementById("result").innerText = 
+            "Youve passed the test"}
+            
+                else if(gradenum < 55){
+                    document.getElementById("result").innerText = "Youve failed the test"
+        }}
+</body>
+</html>

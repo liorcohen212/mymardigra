@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="food" src="./imgs/pizza.jpg" alt="food" width="450" />
+    <script>
+        let foods = [
+            "twitter.jpg",
+            "instagram.jpg",
+            "facebook.jpg",
+            "./imgs/pasta.webp",
+            "./imgs/salad.jpg",
+        ];
+        let i = 0;
+
+        //  create the setTimeout's
+        for (let j = 0; j < foods.length; j++) {
+            setTimeout(changeImage, j * 1000);
+        }
+
+        // function that changes the image
+        function changeImage() {
+            document.getElementById("food").src = foods[i++];
+        }
+    </script>
+</body>
+</html>

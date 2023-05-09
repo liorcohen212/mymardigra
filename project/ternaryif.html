@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function mainFunc(arr, func){
+// מוסיפה לכל אחד מאיברי המערך את הערך 5
+for(let i = 0; i< arr.length; i++){ arr[i] +=5; } // הפעלת הפונקציה המשנית עבור המחדש החדש והחזרת התוצאה return
+    func(arr) function sumArr(arr) { let sum=0; for (let num of arr) sum +=num; return sum; } function avgArr(arr) { let
+    sum=0; for (let num of arr) sum +=num; return sum / arr.length; }
+    console.log(mainFunc([10, 20, 30], sumArr));
+    console.log(mainFunc([10, 20, 30], avgArr));
+    </script>
+</body>
+</html>

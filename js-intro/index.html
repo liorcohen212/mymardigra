@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divush">good morning</div>
+    <img id="animal" src="" alt="" />
+    <p class="text-red">hello</p>
+    <label for="username">username:</label>
+    <input type="text" id="username" />
+    <button onclick="showusername()">send</button>
+    <!--changesize of text-->
+    <p id="para">lorem ipsum sin amet</p>
+    <label for="font-size">enter size:</label>
+    <input type="text" id="font-size" oninput="changesize()" />
+        <p id="ptext">Lorem ipsum dolor sit amet.</p>
+        <select id="color" onchange="changeColor()">
+            <option value="blue">כחול</option>
+            <option value="red">אדום</option>
+            <option value="green">ירוק</option>
+        </select>
+    <script>
+        document.write("<p> hello from js <p>");
+        document.getElementById("divush").innerText = "lior";
+        // innerhtml
+        document.getElementById("divush").innerHTML = "<h4> hackeru <h4>"
+        //style
+        document.getElementById("divush").style.color = "blue";
+        document.getElementById("divush").style.backgroundColor = "yellow";
+        document.getElementById("animal").src = ""
+        //queryselector
+        document.querySelector(".text-red").style.color = "red";
+
+        function showusername(){
+            alert("hello " + document.querySelector("#username").value);
+        }
+        //changesizeoftext
+        function changesize(){
+        document.getElementById("para").style.fontSize = document.getElementById("font-size").value + "px";
+        }
+        function changeColor(){
+        document.getElementById("ptext").style.color = document.getElementById("color").value;
+        }
+        </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

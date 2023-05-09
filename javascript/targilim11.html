@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>price</th>
+            <th>category</th>
+            <th>description</th>
+            </tr>
+        </thead>
+        <tbody id="product"></tbody>
+    </table>
+    <script>
+    function Product(id, name, price, category, description) {
+        this.id = id;
+        this.name = name;גשדג
+        this.price = price;
+        this.category = category;
+        this.description = description;
+        this.get = function (columnName) {
+            return this[columnName];
+        };
+        this.set = function (columnName, value) {
+            this[columnName] = value;
+        };
+    }
+    let products = [
+        new Product(
+            2536,
+            "Sony Professional 32GB XQD",
+            500,
+            "Storage",
+            "The new XQD cards achieve Max read"
+        ),
+        new Product(
+            2537,
+            "Lenovo Legion 15.6 Gaming",
+            4228,
+            "Laptops",
+            "Lenovo Legion 5 pairs unparalleled flexibility with incredible power, offering a plethora of performance options for any gamer in a clean and minimalist design"
+        ),
+        new Product(
+            2538,
+            "ASUS ROG GL552VW-DH71 15.6",
+            5300,
+            "Laptops",
+            "Offering a formidable core experience for serious gaming and multitasking on Windows 10 Pro"
+        ),
+        new Product(
+            2539,
+            "Razer BlackWidow V3 Chroma RGB",
+            439,
+            "Keyboards",
+            "Experience one of the most iconic mechanical gaming keyboards with the Razer BlackWidow"
+        ),
+        new Product(
+            2540,
+            "Microsoft Surface Pro 7.0",
+            5400,
+            "Laptops",
+            "New Surface Pro 7 adapts to the way you work with laptop-to-tablet versatility"
+        ),
+    ];
+    function showProducts() {
+            for (let product of products) {
+                document.getElementById(
+                    "products"
+                ).innerHTML += `<tr> <td> ${product.get(
+                    "id"
+                )} </td> <td> ${product.get("name")} </td><td> ${product.get(
+                    "price"
+                )} </td> <td> ${product.get("category")} </td><td> ${product.get(
+                    "description"
+                )} </td></tr>`;
+            }
+        }
+        showProducts();
+    </script>
+</body>
+</html>

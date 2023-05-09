@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let isadmin = false;
+        let isBiggerThen10 = 4 > 10;
+        console.log(isBiggerThen10);
+        let productPrice = 100;
+        let moneyIHave = 50;
+
+        if (moneyIHave >= productPrice) console.log("You can buy the product");
+        else console.log("You can not buy the product");
+        let age = 20;
+
+                // else if after if
+                if (age <= 18) console.log("You must pay 30 nis");
+        //   else if (18 < age < 30) console.log("You must pay 40 nis");
+        else if (18 < age && age < 30) console.log("You must pay 40 nis");
+        else console.log("You must pay 60 nis");
+        let myName = "Avi",
+            year = 2023;
+        if (myName == "Avi" || year == 2022) console.log("Success");
+        let isEating = true;
+        if (!isEating) console.log("Can play");
+        let counter = 0;
+        if (counter > 5) {
+            console.log("hey");
+            counter++;
+        }
+        console.log(counter);
+        if (counter > 5) console.log("hey");
+        counter++;
+        console.log(counter);
+        // if after if
+        let amount = 5;
+        if (amount < 5) console.log("1");
+        if (amount >= 5) console.log("2");
+        if (amount < 5) console.log("1");
+        else if (amount >= 5) console.log("2");
+        // if with multiple returns
+        function isEven(num) {
+            if (num % 2 == 0) return true;
+            else return false;
+        }
+        console.log(isEven(0));
+        console.log(isEven(3));
+    function printDayNameButRight() {
+    switch (day) {
+        case 0:
+            console.log("Sunday");
+            break;
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wendsday");
+            break;
+        case 4:
+            console.log("Thursday");
+            break;
+        case 5:
+            console.log("Friday");
+            break;
+        case 6:
+            console.log("Saturday");
+            break;
+        default:
+            console.log("No such day");
+            break;
+    }
+}
+</script>
+</body>
+</html>             

@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**slideshow css**/
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+.slideshow {
+    display: none;
+}
+
+.next,
+.prev {
+    cursor: pointer;
+    margin-top: 280px;
+    position: absolute;
+    width: auto;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-top: 280px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    font-family: 'Pattaya';
+    color: #f2cc0f;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 12px;
+    font-size: 30pt;
+    font-weight: bold
+}
+/**navigation bar css**/
+nav {
+    width: 100%;
+    height: 110px;
+    background-color: #8cbf3f;
+}
+img {
+    width: 105px;
+    height: 105px;
+    ;
+    float: left
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 20pt;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 2;
+    color: #f2cc0f;
+}
+/**content**/
+.content1 {
+    background-color: #9453a6;
+
+}
+.content1 h1{
+    font-family: 'Henny Penny';
+    color: #f2cc0f;
+    font-size: 30pt;
+}
+.content1 p{
+    width: 1100px;
+    font-size: 16pt;
+    font-family: 'Roboto', sans-serif;
+}
+/**cards for foundings**/
+.founding-container {
+    width: 100%;
+}
+.hotels{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 30px;
+    padding: 2px 16px;
+    background-color: #f2cc0f;
+}
+.firsthotel, .secondhotel, .thirdhotel{
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.firsthotel:hover ,.secondhotel:hover ,.thirdhotel:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.firsthotel{
+    margin-left: 30px;
+}
+.hotels img{
+    border-radius: 10px 10px 0 0;
+}
+
+h4{
+    font-family: 'Henny Penny';
+    font-size: 20pt;
+    margin-left: 5px;
+}
+.hotels p{
+    margin-left: 5px;
+    font-size: 12pt;
+    font-family: 'Roboto',
+        sans-serif;
+}
+.Museums{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 30px;
+    padding: 2px 16px;
+    background-color: #8cbf3f;
+}
+.firstmuseum, .secondmuseum, .thirdmuseum{
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.firstmuseum:hover, .secondmuseum:hover, .thirdmuseum:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.firstmuseum{
+    margin-left: 30px;
+}
+.Museums img{
+    border-radius: 10px 10px 0 0;
+}
+.Museums p{
+    margin-left: 5px;
+    font-size: 12pt;
+    font-family: 'Roboto',sans-serif;
+}
+.pandbars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 530px;
+    background-color: #f2cc0f;
+}
+.bar, .park{
+    width: 450px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.bar:hover, .park:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.bars h3, .parks h3{
+    margin: auto;
+}
+.bar{
+    margin: auto;
+}
+.park{
+    margin: auto;
+}
+a{
+    font-size: 16pt;
+}
+/**footer**/
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8cbf3f;
+    color: white;
+    text-align: center;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    margin-left: 8px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/**responsive**/
+@media (min-width:480px) and (max-width:810px) {
+    header,
+    section {
+        width: 100%;}}
+@media(min-width:250px) and (max-width:480px) {
+    header,
+    section {
+    width: 100%;
+    }}

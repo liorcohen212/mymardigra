@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full page position absulot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 1200px;
+            margin: 0 auto;
+            /** לשים את כל התוכן שעשינו באמצע**/
+        }
+
+        header{
+            background-color: black;
+            width: 1200px;
+            height: 70px;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        section {
+            width: 400px;
+            padding: 15px;
+            text-align: justify;
+            font-size: 12pt;
+            color: black;
+            line-height: 1.5;
+        }
+
+        .one {
+            float: left;
+            background-color: #333;
+        }
+
+        .two {
+            background-color: #666;
+            float: left;
+        }
+
+        .three {
+            background-color: aquamarine;
+            float: left;
+        }
+        footer{
+            clear: both;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>this is the header!</h1>
+        </header>
+        <section class="one">
+            <h1>the section!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum
+                accumsan bibendum. Etiam elit
+                libero, efficitur
+                at auctor quis, ultrices sed orci. Fusce malesuada nec augue quis ultrices. Mauris rhoncus dui turpis,
+                vel
+                condimentum
+                dolor lacinia nec. Cras dictum rhoncus consequat. Morbi a eros maximus, tempor turpis non, facilisis
+                purus.
+                Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Sed justo libero, consectetur semper blandit bibendum,
+                tincidunt id
+                sem. Integer quis cursus risus. Maecenas posuere dictum sollicitudin. Nullam vel dictum erat. Praesent
+                sit
+                amet nulla et
+                mi commodo iaculis in eget magna. Sed tellus felis, aliquet sed semper posuere, interdum at dolor.
+
+                Donec id dapibus est, a dapibus lectus. In egestas tempus lacus, vitae volutpat turpis faucibus ut. Ut
+                sit
+                amet molestie
+                massa. In hac habitasse platea dictumst. Morbi quis convallis ante. Morbi pellentesque maximus erat eu
+                blandit. In hac
+                habitasse platea dictumst. Nam convallis hendrerit lectus, a molestie felis porttitor ac. Aliquam et
+                augue
+                tellus.
+                Mauris varius, ex quis malesuada rutrum, lorem tortor commodo sem, id vulputate nisi ex ut velit.
+                Vestibulum
+                ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed aliquam sed massa quis sagittis.
+                Nam
+                ligula
+                libero, luctus sit amet ultrices ac, congue ut turpis.</p>
+        </section>
+        <section class="two">
+            <h1>the section!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum
+                accumsan bibendum. Etiam elit
+                libero, efficitur
+                at auctor quis, ultrices sed orci. Fusce malesuada nec augue quis ultrices. Mauris rhoncus dui turpis,
+                vel
+                condimentum
+                dolor lacinia nec. Cras dictum rhoncus consequat. Morbi a eros maximus, tempor turpis non, facilisis
+                purus.
+                Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Sed justo libero, consectetur semper blandit bibendum,
+                tincidunt id
+                sem. Integer quis cursus risus. Maecenas posuere dictum sollicitudin. Nullam vel dictum erat. Praesent
+                sit
+                amet nulla et
+                mi commodo iaculis in eget magna. Sed tellus felis, aliquet sed semper posuere, interdum at dolor.
+
+                Donec id dapibus est, a dapibus lectus. In egestas tempus lacus, vitae volutpat turpis faucibus ut. Ut
+                sit
+                amet molestie
+                massa. In hac habitasse platea dictumst. Morbi quis convallis ante. Morbi pellentesque maximus erat eu
+                blandit. In hac
+                habitasse platea dictumst. Nam convallis hendrerit lectus, a molestie felis porttitor ac. Aliquam et
+                augue
+                tellus.
+                Mauris varius, ex quis malesuada rutrum, lorem tortor commodo sem, id vulputate nisi ex ut velit.
+                Vestibulum
+                ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed aliquam sed massa quis sagittis.
+                Nam
+                ligula
+                libero, luctus sit amet ultrices ac, congue ut turpis.</p>
+        </section>
+        <section class="three">
+            <h1>the section!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum
+                accumsan bibendum. Etiam elit
+                libero, efficitur
+                at auctor quis, ultrices sed orci. Fusce malesuada nec augue quis ultrices. Mauris rhoncus dui turpis,
+                vel
+                condimentum
+                dolor lacinia nec. Cras dictum rhoncus consequat. Morbi a eros maximus, tempor turpis non, facilisis
+                purus.
+                Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Sed justo libero, consectetur semper blandit bibendum,
+                tincidunt id
+                sem. Integer quis cursus risus. Maecenas posuere dictum sollicitudin. Nullam vel dictum erat. Praesent
+                sit
+                amet nulla et
+                mi commodo iaculis in eget magna. Sed tellus felis, aliquet sed semper posuere, interdum at dolor.
+
+                Donec id dapibus est, a dapibus lectus. In egestas tempus lacus, vitae volutpat turpis faucibus ut. Ut
+                sit
+                amet molestie
+                massa. In hac habitasse platea dictumst. Morbi quis convallis ante. Morbi pellentesque maximus erat eu
+                blandit. In hac
+                habitasse platea dictumst. Nam convallis hendrerit lectus, a molestie felis porttitor ac. Aliquam et
+                augue
+                tellus.
+                Mauris varius, ex quis malesuada rutrum, lorem tortor commodo sem, id vulputate nisi ex ut velit.
+                Vestibulum
+                ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed aliquam sed massa quis sagittis.
+                Nam
+                ligula
+                libero, luctus sit amet ultrices ac, congue ut turpis.</p>
+        </section>
+        <footer>
+            <h1>this is the footer!</h1>
+        </footer>
+    </div>
+</body>
+
+</html>

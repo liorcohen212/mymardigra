@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selectors</title>
+    <style>
+        body{
+            font-size: 35pt;
+            font-family: ariel;
+        }
+    /*רק לכותרת הספציפית הרשומה*/
+        a[title="home sweet home"]{
+        color: aquamarine;
+        background-color: #050;
+        }
+        /*מכיל את המילה הרשומה*/
+        a[title~=home]{
+            color: aquamarine;
+            background-color: #fc0;
+        }
+        /*מכיל את הרצף אותיות הרשום*/
+        a[title*="ho"]{
+            color: #005;
+            background-color: #fc0;
+        }
+        /*מסתיים במה שרשום למטה*/
+        a[href$="pdf"]{
+            color: #f00;
+            background-color: #fc0;
+        }
+        /*מתחיל במה שרשום למטה*/
+        a[href^="https"]{
+            color: #f00;
+            background-color: #fc0;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" title="home sweet home">home sweet home</a></li>
+        <li><a href="#" title="home bitter home">home bitter home</a></li>
+        <li><a href="#" title="home black home">home black home</a></li>
+        <li><a href="https://www.walla.co.il">walla</a></li>
+        <li><a href="https://www.google.com">google</a></li>
+        <li><a href="map.pdf">download map</a></li>
+    </ul>
+</body>
+</html>

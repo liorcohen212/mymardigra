@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="photo" src="instagram.jpg" alt="logo" style="height: 200px; width: 200px;">
+    <br>
+    <button onclick="instagram()">instagram</button>
+    <button onclick="facebook()">facebook</button>
+    <button onclick="twitter()">twitter</button>
+    <script>
+        function instagram(){
+            document.getElementById("photo").src = "instagram.jpg"
+        }
+        function twitter(){
+            document.getElementById("photo").src = "twitter.jpg"  
+        }
+        function facebook(){
+            document.getElementById("photo").src ="facebook.jpg" 
+        }
+    </script>
+    <br>
+    <!--second easier way-->
+    <img id="logo2" src="facebook.jpg" alt="socialing" style="height: 200px; width: 200px;"><br>
+        <button onclick="socialimg('instagram.jpg')">instagram</button>
+        <button onclick="socialimg('facebook.jpg')">facebook</button>
+        <button onclick="socialimg('twitter.jpg')">twitter</button>
+        <script>
+            function socialimg(path){
+                document.getElementById("logo2").src = path;
+            }
+        </script>
+</body>
+</html>

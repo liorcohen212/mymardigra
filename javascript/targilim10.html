@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="days" id="days"></select>
+    <script>
+        let data = {
+            daysNames: [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ],
+            addOptions: function () {
+                for (let day of this.daysNames) {
+                    document.getElementById(
+                        "days"
+                    ).innerHTML += `<option> ${day} </option>`;
+                }
+            },
+        };
+        data.addOptions();
+        // כתבו מחלקה המייצגת יוזר, לכל יוזר יש שם, אימייל וסיסמה
+      // במחלקה הגדירו בנאי שמאתחל את משתני המחלקה 
+      // הגדירו מתודה שתפקידה להדפיס לקונסול את כל פרטי היוזר ללא הסיסמה
+    function User(_name, _email, _password) {
+        this.name = _name;
+        this.email = _email;
+        this.password = _password;
+        this.getDetails = function () {
+            console.log(`name is: ${this.name} and email is: ${this.email}`);
+        };
+    }
+
+    let users = [
+        new User("Shalom", "shalom@gmail.com", "12345678"),
+        new User("Shoval", "shoval@gmail.com", "abcd123"),
+    ];
+
+    for (let user of users) user.getDetails();
+
+    </script>
+</body>
+</html>

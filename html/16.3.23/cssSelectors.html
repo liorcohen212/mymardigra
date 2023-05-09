@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        /*only children*/
+        div h1{
+            color: magenta;
+            font-size: 30pt;
+        }
+        /*first brother only*/
+        h1+p{
+            color: aqua;
+            background-color: black;
+        }
+        /*all brothers*/
+        h1~p{}
+    </style>
+</head>
+<body>
+    <div>
+    <header>
+        <p>content</p>
+        <h1>content</h1>
+        <h2>content</h2>
+        <p>content</p>
+    </header>
+    <p>content</p>
+    <h1>content</h1>
+    <p>content</p>
+    <p>content</p>
+    </div>
+</body>
+</html>

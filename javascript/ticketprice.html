@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="forme">
+<label for="">age:</label>
+        <input type="text" name="userage"><br>
+        <input type="button" value="click to get price" onclick="check()"></form>
+        <script>
+            function check(){
+                var age = document.forme.userage.value;
+                if (age <= 12){
+                    alert("the price is 75 sheckels");
+                }
+                else{
+                    alert("the price is 150 sheckels");
+                    }
+                }
+                /*age <=12 ? alert("the ticket price is 75 nis") : alert("the price is 150 nis");*/
+        </script>
+    </body>
+</body>
+</html>

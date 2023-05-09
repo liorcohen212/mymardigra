@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function calcavg(arr){
+            let sum = 0;
+            for(let i in arr){
+                sum += arr[i];
+            }
+            return sum / arr.length;
+            }
+            console.log(calcavg([51,25,74]));
+            let myname = "lior";
+            console.log(myname[1]);
+            for(let char of myname) console.log(char);
+            console.log(myname.length);
+            // max
+                // כתבו פונקציה שמקבלת מערך של מספרים ומחזירה את המספר המקסימלי במערך
+                function findMax(arr) {
+                    let maxi;
+                    if (arr.length == 0) maxi = null;
+                    else {
+                        maxi = arr[0];
+                        // loop
+                        for (let i = 1; i < arr.length; i++) {
+                            if (maxi < arr[i]) maxi = arr[i];
+                        }
+                    }
+                    return maxi;
+                }
+
+                console.log(findMax([]));
+                console.log(findMax([-1, 50, 104]));
+                console.log(findMax([-1, -90, -40]));
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let func = function () {
+            console.log("hello");
+        };
+        func();
+        // כתבו פונקציה שמקבלת מספר ובודקת האם הוא זוגי או אי זוגי
+            // ternary
+            // function expression
+            let EvenOrOdd = function (num) {
+                return num % 2 == 0 ? "Even" : "Odd";
+            };
+            console.log(EvenOrOdd(21));
+            console.log(EvenOrOdd(46));
+            let countEven = function (arr) {
+                let counter = 0
+                for(let num of arr){
+                    if (num % 2 == 0) counter++;
+                }
+                return counter;
+            };
+            console.log(countEven([10, 23, 26, 84, 25, 30, 50, 66, 87, 54]))
+    </script>
+</body>
+</html>

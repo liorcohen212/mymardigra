@@ -1,0 +1,17 @@
+section p{
+    color: $baseColor;
+    font-size: $textSize;
+}
+section{
+    background-color: $bgc;
+    width: $baseWidth;
+}
+.cat{
+    font-size: 12pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cta{
+    @extend button;
+    width: 500px;
+    text-align: center;
+}

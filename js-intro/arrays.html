@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = ["yoval", "lior", "ron"];
+        let prices = [23, 80, 56 ,150];
+        let data = [12, "mor", true];
+        console.log(names[1]);
+        names.push("yarin");
+        names.unshift("ron");
+        // names.pop() delete from end
+        //names.shift() delete from start
+        console.log(names);
+        names.pop();
+        names.shift();
+        console.log(names);
+        console.log(prices.indexOf(80));
+        console.log(prices.indexOf(100));
+    </script>
+</body>
+</html>

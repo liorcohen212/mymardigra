@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>איזה יום זה?</h1>
+        <input id="userDate" type="date" />
+        <button onclick="checkDate()">בדוק</button>
+        <p id="result"></p>
+        <script>
+            function checkDate() {
+                let date = new Date(document.getElementById("userDate").value);
+                let day = date.getDay();
+                switch (day) {
+                    case 0:
+                        document.getElementById("result").innerText = "יום ראשון";
+                        break;
+                    case 1:
+                        document.getElementById("result").innerText = "יום שני";
+                        break;
+                    case 2:
+                        document.getElementById("result").innerText = "יום שלישי";
+                        break;
+                    case 3:
+                        document.getElementById("result").innerText = "יום רביעי";
+                        break;
+                    case 4:
+                        document.getElementById("result").innerText = "יום חמישי";
+                        break;
+                    case 5:
+                        document.getElementById("result").innerText = "יום שישי";
+                        break;
+                    case 6:
+                        document.getElementById("result").innerText = "יום שבת";
+                        break;
+                    default:
+                        break;
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#"><img src="img/logo.jpg" alt="logo" name="logo"></a>
+                <ul>
+                    <li><a href="mardigra.html">main</a></li>
+                    <li><a href="aboutpage.html">about</a></li>
+                    <li><a href="media.html">media</a></li>
+                    <li><a href="faq.html">faq</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2 style="background-color: #f2cc0f">photos</h2>
+    <div class="photos" >
+        <div class="firstphoto">
+            <img src="img/photo4.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div> 
+        <div class="secondphoto">
+            <img src="img/photo3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="thirdphoto">
+            <img src="img/photo2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="forthphoto">
+            <img src="img/photo1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+    </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+    
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">1 / 11</div>
+                <img src="img/photo1.jpg" style="width:100%;height: 580px;">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">2 / 11</div>
+                <img src="img/photo2.jpg" style="width:100%;height: 580px;">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">3 / 11</div>
+                <img src="img/photo3.jpg" style="width:100%;height: 580px;">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">4 / 11</div>
+                <img src="img/photo4.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">5 / 11</div>
+                <img src="img/photo5.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">6 / 11</div>
+                <img src="img/photo6.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">7 / 11</div>
+                <img src="img/photo7.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">8 / 11</div>
+                <img src="img/photo8.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">9 / 11</div>
+                <img src="img/photo9.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">10 / 11</div>
+                <img src="img/photo10.jpg" style="width:100%;height: 580px;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext" style="background-color: black; color: white;">11 / 11</div>
+                <img src="img/photo11.jpg" style="width:100%;height: 580px;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</div>
+            <script>
+                function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                }
+                function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                }
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+            </script>
+            <h1 style="background-color: #9453a6;">videos</h1>
+            <div class="videos">
+                <div class="firstv"><iframe width="400" height="315" src="https://www.youtube.com/embed/Si9q-Ricgjs" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe></div>
+                <div class="secondvid"><iframe width="400" height="315" src="https://www.youtube.com/embed/EkIZwXbSh-Y" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe></div>
+                <div class="thirdvid"><iframe width="400" height="315" src="https://www.youtube.com/embed/C8mJ2C2cbd0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe></div>
+            </div>
+            <footer>
+                <h4>Copyright © 1996-2023 MardiGrasNewOrleans.com</h4>
+                <br><br>
+                <a href="https://www.instagram.com/mardigrasneworleans/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/MardiGrasNOLA" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/MardiGrasNewOrleans" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" class="fa fa-youtube"></a>
+                </div><br><br>
+            </footer>
+</body>
+</html>

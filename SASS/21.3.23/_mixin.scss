@@ -1,0 +1,15 @@
+.boxm1{
+    @include boxm(200px, 100px);
+}
+.boxm2{
+    @include boxm(100px, 200px);
+}
+.boxm3{
+    @include boxm(80px, 80px);
+}
+.boxm4{
+    @include boxm(300px, 50px);
+}
+.boxm5{
+    @include boxm(100px, 300px);
+}

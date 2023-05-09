@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clocks</title>
+</head>
+<body>
+    <form name="forme">
+        <input type="text" name="clock">
+    </form>
+    <script>
+        function runTime() {
+            var theClock= document.forme.clock;
+            var theTime = new Date();
+            var hr = theTime.getHours();
+            var mn = theTime.getMinutes();
+            var sc = theTime.getSeconds();
+            var clockFace = hr + ":" + mn + ":" + sc;
+            theClock.value = clockFace;
+        }
+        runTime();
+    </script>
+    
+</body>
+</html>

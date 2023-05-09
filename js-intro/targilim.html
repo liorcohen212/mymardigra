@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="facebook.jpg" alt="game">
+<h2 id="food">food:</h2>
+<h2 id="money">money:</h2>
+<h2 id="name">name:lior</h2>
+<button onclick="buyfood()">buy food</button>
+<button onclick="askformoney()">ask for money</button>
+<script>
+    let food = 0,
+    money = 100;
+    function buyfood(){
+        document.getElementById("food").innerHTML = "food " + food;
+        food += 2;
+        document.getElementById("money").innerHTML = "money " + money;
+        money -= 5;
+    }
+    function askformoney(){
+        document.getElementById("food").innerHTML = "food " + food;
+        food -= 1;
+        document.getElementById("money").innerHTML = "money " + money;
+        money += 5;
+    }
+        </script>
+</body>
+</html>

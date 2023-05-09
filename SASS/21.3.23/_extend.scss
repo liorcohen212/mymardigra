@@ -1,0 +1,26 @@
+button{
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+button:hover{
+    background-color: orangered;
+}
+.box1{
+    @extend %box;
+}
+.box2{
+    @extend %box;
+}
+.box3{
+    @extend %box;
+}
+.box4{
+    @extend %box;
+}
+.box5{
+    @extend %box;
+}
