@@ -35,6 +35,9 @@ nav ul li a {
     line-height: 2;
     color: #f2cc0f;
 }
+.topnav{
+    display: none;
+}
 /** photo lightbox**/
 .row>.column {
     padding: 0 8px;
@@ -44,9 +47,12 @@ nav ul li a {
     display: table;
     clear: both;
 }
-.firstphoto,.secondphoto,.thirdphoto,.forthphoto {
+.firstphoto,.thirdphoto{
     float: left;
-    width: 25%;
+    width: 40%;
+    background-color: #f2cc0f
+}
+.secondphoto, .forthphoto{
     background-color: #f2cc0f
 }
 .modal {
@@ -157,4 +163,94 @@ footer {
 
 .fa:hover {
     opacity: 0.7;
+}
+@media (min-width:480px) and (max-width:810px) {
+    header,
+    section {
+        width: 100%;}
+    .topnav{
+        display: none;
+    }
+    nav ul li a {
+        font-size: 15pt;
+        margin-top: 30px;
+        width: 60px;
+    }
+    .firstphoto,.secondphoto,.thirdphoto,.forthphoto {
+        float: none;
+        width: 100%;
+        background-color: #f2cc0f;
+        margin: 0 auto;
+    }
+    .photos img{
+        height: 400px;
+        width: 400px;
+        margin-left: 15%;
+    }
+    .firstv,.secondvid,.thirdvid{
+        float:none;
+        margin-right: 30px;
+        margin-left: 10%;
+    }
+}
+
+@media(min-width:250px) and (max-width:480px) {
+    header,
+    section {
+    width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        display: block;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    .firstphoto,.secondphoto,.thirdphoto,.forthphoto {
+        float: none;
+        width: 100%;
+        background-color: #f2cc0f;
+        margin: 0 auto;
+    }
+    .photos img{
+        height: 270px;
+        width: 270px;
+        margin-left: 15%;
+    }
+    .firstv,.secondvid,.thirdvid{
+        float:none;
+        margin-right: 30px;
+        margin-left: 5%;
+    }
 }

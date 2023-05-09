@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(() => {
+            console.log("im first");
+        } , 3000);
+        console.log("im last");
+        //callback
+        var printfirst = (callbackfunc) => {
+            setTimeout(() => {
+                console.log("im first");
+                callbackfunc();
+            }, 3000);
+        };
+        var printlast = () => {
+            console.log("im last");
+        };
+        printfirst(printlast);
+        //callback hell
+        //getData(function (result1) {
+        //    getMoreData1(result1, function (result2) {
+        //        getMoreData2(result2, function (result3) {
+        //            getMoreData3(result3, function (result4) {
+        //                console.log(result4);
+        //            });
+        //        });
+        //    });
+       // });
+        //promise
+        /**var Promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("im first");
+                resolve();
+            }, 3000);
+        });**/
+        //Promise.then(() => {
+         //   console.log("im last");
+        //});
+        /**var Promise = new Promise((resolve, reject) => {
+            var mynumber = 6;
+            if (mynumber > 5) {
+                resolve("all things went well");
+            } else {
+                reject(new Error("something went wrong"));
+            }
+        });
+        Promise
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((Error) => {
+            console.log(Error);
+        });**/
+        const secret = (num) => {
+            return new Promise((resolve, reject) => {
+                if(num % 2 === 0) {
+                    resolve(num + " is even");
+                } else {
+                    reject(num + " is odd");
+                }
+            });
+        };
+        secret(10)
+        .then((result) => console.log(result))
+        .catch((Error) => console.log(Error));
+        secret(3)
+        .then((result) => console.log(result))
+        .catch((Error) => console.log(Error));
+        //promise all
+        function func1 (value) {
+            return new Promise ((resolve, reject) => {
+                if(value.length % 2 == 0) 
+                resolve("yes")
+            else reject(new Error("no"))
+            })
+        }
+        func1("moshe")
+            .then((result) => console.log(result))
+            .catch((Error) => console.log(Error));
+        func1("limona")
+            .then((result) => console.log(result))
+            .catch((Error) => console.log(Error));
+
+            function func1includest (value) {
+                    return new Promise((resolve, reject) => {
+                        if (value.includes("t")) 
+                            resolve("yes");
+                        else reject(Error("no"));
+                    })
+                }
+                async function checkstrings(){
+                    let result = await func1includest("result");
+                    console.log(result);
+                    let result2 = await func1includest("oved");
+                    console.log(result2);
+                }
+                checkstrings();
+                //web storge
+                localStorage.setItem("firstName", "Mor");
+                localStorage.getItem("firstName");
+                localStorage.removeItem("firstName");
+                //targil 1
+    </script>
+    <input type="text" placeholder="username" id="username">
+    <br><br>
+    <input type="password" placeholder="password" id="password">
+    <button onclick="placeinstorge()">login</button>
+    <script>
+        function placeinstorge () {
+            let user = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            localStorage.setItem("userName", user)
+            localStorage.setItem("password", password);
+            alert("welcome " + user);
+        }
+        //targil 2
+    </script>
+<ul id="showprod">
+</ul>
+<input type="text" placeholder="name" id="name">
+<input type="text" placeholder="price" id="price">
+<button onclick="adding()">add</button>
+    <script>
+        class product {
+        constructor (id, name , price){
+            this.id = id;
+            this.name = name;
+            this.price = price;
+        }
+            get(prop){
+                return this[prop];
+            }
+            set(prop, value){
+                this[prop] = value;
+            }
+        }
+            let products =[
+            new product(25, "charger" , 80),
+            new product(30, "iphone 14 pro max", 4850),
+            new product(34, "laptop pro ultra", 4200),];
+        async function adding() {
+
+            let price2 = document.getElementById("price").value;
+            let name2 = document.getElementById("name").value;
+            products.push( new product (undefined, name2, price2));
+        } 
+                sessionStorage.setItem("products", JSON.stringify(products));
+                    function showproducts() {
+                        for (let product of JSON.parse(sessionStorage.getItem("products"))) {
+                            document.getElementById("showprod").innerHTML += `<li>${product.name}</li>`;
+                        }
+                    }
+                    showproducts();
+    </script>
+</body>
+</html>

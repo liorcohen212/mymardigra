@@ -25,6 +25,19 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+        <a href="mardigra.html">main</a>
+        <a href="aboutpage.html">about</a>
+        <a href="media.html">media</a>
+        <a href="faq.html">faq</a>
+        <a href="contact.html">contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
     </div>
     </header>
     <!--slideshow-->
@@ -89,7 +102,7 @@
             <a href="https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/">to the website</a>
         </div>
         <div class="secondhotel">
-            <img src="img/secondhotel.jpg" alt="ace hotel" style="height: 380px; width: 450px;">
+            <img src="img/secondhotel.jpg" alt="ace hotel" style="height: 380px; width: 400px;">
             <h4>Ace Hotel New Orleans</h4>
             <p>Ace Hotel New Orleans is located on Warehouse District with in 5 minutes walk for harrah casino and has  a roof bar and a great 
                 resterant</p>
@@ -179,6 +192,14 @@
                         }
                         slides[slideIndex - 1].style.display = "block";
                     }
+                    function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                    x.style.display = "none";
+                    } else {
+                    x.style.display = "block";
+                    }
+}
         </script>
 </body>
 </html>

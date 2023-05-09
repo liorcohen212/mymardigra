@@ -82,6 +82,7 @@ nav ul li a {
     line-height: 2;
     color: #f2cc0f;
 }
+.topnav{display: none;}
 /**content**/
 .content1 {
     background-color: #9453a6;
@@ -93,7 +94,7 @@ nav ul li a {
     font-size: 30pt;
 }
 .content1 p{
-    width: 1100px;
+    width: 100%;
     font-size: 16pt;
     font-family: 'Roboto', sans-serif;
 }
@@ -170,7 +171,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    height: 530px;
+    height: 550px;
     background-color: #f2cc0f;
 }
 .bar, .park{
@@ -223,9 +224,96 @@ footer {
 @media (min-width:480px) and (max-width:810px) {
     header,
     section {
-        width: 100%;}}
+        width: 100%;}
+    .topnav{
+        display: none;
+    }
+    nav ul li a {
+        font-size: 15pt;
+        margin-top: 30px;
+        width: 60px;
+    }
+    .hotels{
+        display: grid;
+        grid-template-columns: 1fr;;
+        gap: 30px;
+        padding-left: 10%;
+}
+.firsthotel{
+    margin-left: 00px;
+}
+.Museums{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+padding-left: 10%;}
+.firstmuseum{
+    margin-left: 00px;
+}
+.pandbars{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 1100px;}}
 @media(min-width:250px) and (max-width:480px) {
     header,
     section {
     width: 100%;
-    }}
+    }
+    nav{
+        display: none;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        display: block;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    .hotels{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;}
+        .firsthotel{
+            margin-left: 00px;
+        }
+        .Museums{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;}
+            .firstmuseum{
+                margin-left: 00px;
+            }
+            .pandbars{
+                display: grid;
+                grid-template-columns: 1fr ;
+                gap: 30px;
+                height: 1100px;
+}}

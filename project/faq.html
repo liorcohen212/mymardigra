@@ -21,6 +21,19 @@
                 <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
+            <div class="topnav">
+                <a href="#home" class="active">Logo</a>
+                <div id="myLinks">
+                    <a href="mardigra.html">main</a>
+                    <a href="aboutpage.html">about</a>
+                    <a href="media.html">media</a>
+                    <a href="faq.html">faq</a>
+                    <a href="contact.html">contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
     </header>
     <h2 style="background-color: #f2cc0f; font-size: 20pt;">everything there is to know about mardi gra</h2>
@@ -153,6 +166,15 @@
         </div>
         </table>
     </div>
+    <script>
+        function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                    x.style.display = "none";
+                    } else {
+                    x.style.display = "block";
+                    }}
+    </script>
     <footer>
         <h4>Copyright © 1996-2023 MardiGrasNewOrleans.com</h4>
         <br><br>
